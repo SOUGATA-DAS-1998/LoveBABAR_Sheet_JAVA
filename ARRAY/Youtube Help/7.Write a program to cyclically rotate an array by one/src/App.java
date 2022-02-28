@@ -24,6 +24,20 @@ public class App {
         reverce(a, 0, n-1);
     }
 
+
+    // Cyclically rotate an array by one
+    public void rotateBy1(int arr[], int n)
+    {
+        int i=0,j=n-1;
+        
+        while( i != j){
+            int temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+            i++;
+        }
+    }
+
     public static void display(int a[], int n) {
 		for (int i = 0; i < n; i++) {
 			System.out.print(a[i] + " ");
